@@ -5,6 +5,7 @@ class PayAccountsController < ApplicationController
   end
 
   def show
+    @pay_account = PayAccount.find(params[:id])
   end
 
   def create
@@ -13,4 +14,8 @@ class PayAccountsController < ApplicationController
   def destroy
   end
 
+
+
 end
+
+
