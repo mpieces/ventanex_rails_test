@@ -10,6 +10,20 @@
   </head>
 
   <body>
-    <%= yield %>
+    <header class="clearfix">
+        <div class="left-nav">
+          <ul>
+            <li><%= link_to "Home", pay_accounts_path, class: 'btn btn-white' %></li>
+          </ul>
+        </div>
+        <div class="right-nav">
+          <ul>
+            <li><%= link_to "Add New Account", new_pay_account_path, class: 'btn btn-success' %></li>
+          </ul>
+        </div>
+      </header>
+      <div class="content">
+        <%= yield %>
+      </div>
   </body>
 </html>

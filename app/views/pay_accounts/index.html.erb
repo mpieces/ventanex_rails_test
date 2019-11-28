@@ -14,7 +14,7 @@
               <th>Account Type</th>
               <th>Account Number</th>
               <th>
-                <button type="button" class="btn btn-success">Create</button>
+              
               </th>
             </tr>
           </thead>
@@ -30,8 +30,8 @@
                 <td>
               
                   <%= link_to "Show", pay_account_path(pay_account), class: "btn btn-warning" %>
-                  
-                  <button type="button" class="btn btn-danger">Delete</button>
+                  <%= link_to "Delete", pay_account_path(pay_account), method: :delete, data: {confirm: "Are you sure?"}, class: "btn btn-danger" %>
+    
                 </td>
               </tr>
             <% end %>
